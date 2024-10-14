@@ -21,6 +21,11 @@ button:hover {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .highlight {
     color: var(--primary);
 }

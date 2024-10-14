@@ -16,6 +16,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+    /* left: 10vh; */
+    animation: appear-left 1s;
 }
 
 #home .left h1 {
@@ -25,8 +28,9 @@
 }
 
 #home .left p {
-    color: #c8c8c8;
-    font-size: small;
+    color: #dbdbdb;
+    font-size: 0.9em;
+    font-family: "Poppins", sans-serif;
 }
 
 #home .left div {
@@ -38,4 +42,59 @@
     font-size: medium;
     font-weight: 600;
     width: 100%;
+}
+
+#home img {
+    position: relative;
+    animation: appear-right 1s;
+}
+
+@keyframes appear-left {
+    from {
+        left: -5vh;
+        opacity: 0.2;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear-right {
+    from {
+        right: -5vh;
+        opacity: 0.2;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear-below {
+    from {
+        bottom: -15px;
+        opacity: 0.2;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home .right {
+        display: none;
+    }
+    #home .left {
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        animation: appear-below 1s;
+    }
+    #home .left div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
