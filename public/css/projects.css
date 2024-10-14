@@ -50,37 +50,18 @@
     background-color: rgb(26, 35, 51);
 }
 
-/* .cards a{
-    width: 50%;
-    height: 100%;
-    padding: 10px 0;
-    margin: 40px 10px;
-    border-radius: 5px;
-    color: black;
-    border: 3px solid var(--primary);
-    transition: 0.3s;
-    text-decoration: none;
-    font-size: 1.3em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary);
-} */
-
-/* .cards a:hover{
-    background-color: transparent;
-} */
-
-
 @media screen and (max-width: 600px) {
-    .container {
+    #projects {
+        height: auto;
+    }
+    .projects {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow-x: hidden;
+        height: auto;
     }
     
     .cards img{

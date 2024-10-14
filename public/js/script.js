@@ -16,7 +16,7 @@ window.onload = () => {
   });
 
   document.getElementsByTagName("nav")[0].onclick = () => {
-    window.innerWidth <= 600 && document.getElementById("more").click();
+    window.screenY <= 600 && document.getElementById("more").click();
   };
 
   const sentPopupMessage = (type) => {
