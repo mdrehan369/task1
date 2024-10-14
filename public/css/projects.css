@@ -1,0 +1,93 @@
+@import url("utils.css");
+
+
+#projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 2% 3%;
+    padding: 2% 2% 2% 2%;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.cards img{
+    width: 333px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.cards .text{
+    padding: 1%;
+    height: 170px;
+    width: 333px;
+    line-height: 1.3;
+}
+
+.cards:hover {
+    background-color: rgb(26, 35, 51);
+}
+
+/* .cards a{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0;
+    margin: 40px 10px;
+    border-radius: 5px;
+    color: black;
+    border: 3px solid var(--primary);
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+} */
+
+/* .cards a:hover{
+    background-color: transparent;
+} */
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    
+    .cards img{
+        width: 300px;
+    }
+
+    .cards .text{
+        width: 300px;
+    }
+}

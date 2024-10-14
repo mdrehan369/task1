@@ -2,6 +2,7 @@
 @import url("header.css");
 @import url("about.css");
 @import url("contact.css");
+@import url("projects.css");
 
 * {
     margin: 0;
@@ -20,4 +21,13 @@ body {
     overflow-x: hidden;
     background-color: var(--secondary);
     /* scroll-behavior: smooth; */
+}
+
+footer {
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: rgb(26, 35, 51);
+    font-size: small;
+    font-weight: 600;
 }

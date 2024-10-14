@@ -65,6 +65,7 @@ header nav ul a:hover {
 
 header nav ul a:active {
     color: var(--primary);
+    text-decoration: underline;
 }
 
 header #more {
@@ -75,11 +76,8 @@ header #more {
 @media only screen and (max-width: 600px) {
     header nav {
         position: absolute;
-        /* background-color: var(--secondary); */
-        /* background-color: red; */
         background-color: transparent;
         backdrop-filter: blur(3px);
-        /* opacity: 0.5; */
         top: 10vh;
         left: 0;
         width: 100%;

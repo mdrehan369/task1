@@ -58,21 +58,14 @@
     transition-duration: 300ms;
 }
 
-/* #contact .left i {
-    margin: 5px;
-    color: var(--primary);
-} */
-
 #contact h1{
     font-size: 3.0em;
     cursor: pointer;
 }
 
 .fa-brands{
-    /* font-size: 1.7em; */
     margin-top: 20%;
     cursor: pointer;
-    /* transition: color 0.2s; */
     position:relative;
     color: var(--textColor);
 }
@@ -133,24 +126,6 @@
     content: 'linkedin';
 }
 
-/* #contact .right button, .left #a1{
-    text-decoration: none;
-    font-size: 1.5em;
-    background-color: var(--primary);
-    color: black;
-    border-radius: 5px;
-    border: 3px solid var(--primary);
-    transition: background-color 200ms;
-    padding: 8px 14px 8px 14px;
-    text-align: center;
-} */
-
-/* #contact .right button:hover, .left #a1:hover{
-    background-color: transparent;
-    border: 3px solid var(--primary);
-    cursor: pointer;
-} */
-
 #contact .popup {
     min-width: 15vw;
     width: fit-content;
@@ -165,8 +140,6 @@
     justify-content: center;
     animation: popup 0.5s;
     display: none;
-    /* transition: all; */
-    /* transition-duration: 300; */
 }
 
 #contact .error {
@@ -187,7 +160,6 @@
 
 #contact .left .icons a{
     text-decoration: none;
-    /* background-color: black; */
 }
 
 #contact #submit:disabled {
