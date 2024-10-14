@@ -1,0 +1,58 @@
+@import url("utils.css");
+
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    width: 20%;
+    padding-left: 20px;
+}
+
+header div {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div button {
+    width: 60%;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+header nav {
+    width: 60%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+header nav ul a:active {
+    color: var(--primary);
+}

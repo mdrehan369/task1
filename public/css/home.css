@@ -1,0 +1,41 @@
+@import url("utils.css");
+
+#home {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home .left {
+    width: 35%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#home .left h1 {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+#home .left p {
+    color: #c8c8c8;
+    font-size: small;
+}
+
+#home .left div {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: medium;
+    font-weight: 600;
+    width: 100%;
+}

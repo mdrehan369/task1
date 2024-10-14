@@ -1,0 +1,26 @@
+:root {
+    --primary: #A9333A;
+    --secondary: #090910;
+}
+
+button {
+    background-color: var(--primary);
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.highlight {
+    color: var(--primary);
+}
