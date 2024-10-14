@@ -1,0 +1,231 @@
+@import url("utils.css");
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#contact .left{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contact .right{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .right .inp{
+    width: 85%;
+    height: 10%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    color: var(--textColor);
+    background-color: rgb(26, 35, 51);
+}
+
+#contact .right textarea{
+    width: 85%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    resize: none;
+    color: var(--textColor);
+    margin-bottom: 3%;
+    background-color: rgb(26, 35, 51);
+}
+
+
+#contact i{
+    margin: 5px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* #contact .left i {
+    margin: 5px;
+    color: var(--primary);
+} */
+
+#contact h1{
+    font-size: 3.0em;
+    cursor: pointer;
+}
+
+.fa-brands{
+    /* font-size: 1.7em; */
+    margin-top: 20%;
+    cursor: pointer;
+    /* transition: color 0.2s; */
+    position:relative;
+    color: var(--textColor);
+}
+
+.fa-brands:hover{
+    color: var(--primary);
+}
+
+.fa-facebook::after{
+    font-size: 0.4em;
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    letter-spacing: 2px;
+}
+
+.fa-facebook:hover::after{
+    content: 'Facebook';
+}
+
+.fa-twitter::after{
+    font-size: 0.4em;
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    letter-spacing: 2px;
+}
+
+.fa-twitter:hover::after{
+    content: 'twitter';
+}
+
+.fa-instagram::after{
+    font-size: 0.4em;
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    letter-spacing: 2px;
+}
+
+.fa-instagram:hover::after{
+    content: 'instagram';
+}
+
+.fa-linkedin::after{
+    font-size: 0.4em;
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    letter-spacing: 2px;
+}
+
+.fa-linkedin:hover::after{
+    content: 'linkedin';
+}
+
+/* #contact .right button, .left #a1{
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: var(--primary);
+    color: black;
+    border-radius: 5px;
+    border: 3px solid var(--primary);
+    transition: background-color 200ms;
+    padding: 8px 14px 8px 14px;
+    text-align: center;
+} */
+
+/* #contact .right button:hover, .left #a1:hover{
+    background-color: transparent;
+    border: 3px solid var(--primary);
+    cursor: pointer;
+} */
+
+#contact .popup {
+    min-width: 15vw;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 6vh;
+    position: absolute;
+    bottom: 3vh;
+    right: 2vw;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: popup 0.5s;
+    display: none;
+    /* transition: all; */
+    /* transition-duration: 300; */
+}
+
+#contact .error {
+    background-color: var(--primary);
+}
+
+#contact .success {
+    background-color: green;
+}
+
+#contact .server-error {
+    background-color: red;
+}
+
+#contact .left a{
+    margin-top: 40px;
+}
+
+#contact .left .icons a{
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+#contact #submit:disabled {
+    opacity: 0.5;
+}
+
+#contact #submit {
+    opacity: 1;
+}
+
+@media screen and (max-width:600px){
+    #contact {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    #contact .left{
+        width: 85%;
+        height: auto;
+        margin: 5%;
+    }
+    #contact .right{
+        width: 85%;
+        height: auto;
+        margin: 5%;
+    }
+
+    #contact .left h1{
+        font-size: 2.5em;
+    }
+}
+
+@keyframes popup {
+    from {
+        bottom: 1vh;
+    }
+    to {
+        bottom: 3vh;
+    }
+}
